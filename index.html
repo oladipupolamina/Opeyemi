@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>ASSIGNMENT 2</title>
+  </head>
+  <body>
+    <div class="sign-up">
+      <div class="individual">
+        <img src="Desktop image.svg" alt="Desktop-image" class="Desktop-logo" />
+        <img src="Mobile-Image.svg" alt="Mobile-Image" class="Mobile-logo" />
+        <h1>For Individuals</h1>
+        <p class="Mobile-text">
+          Inspiring wholesome harmony for the mind, body and spirit, for
+          everyone, everywhere.
+        </p>
+        <p class="Desktop-text">
+          Start benefiting from the wellness experience. For <br />
+          companies looking on increasing productivity, and improving
+          organization wellness.
+        </p>
+      </div>
+      <div class="form">
+        <form action="#">
+          <div class="short-field">
+            <div class="first-field group">
+              <div class="input-block">
+                <label for="fname">First name:</label><br />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Enter first name"
+                required
+              /><br /><br />
+            </div>
+             <div class="input-block"> 
+              <label for="lname">Last name:</label><br />
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Enter last name"
+                required
+              /><br /><br />  
+            </div>
+            </div>
+            <div class= "second-field group">
+              <div class="input-block">
+                <label for="gender">Gender</label><br />
+              <select name="gender" id="gender" required>
+                <option value=" " disabled selected hidden >
+                  Select gender
+                </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Prefeered Not to Say">
+                  Preferred not to say
+                </option></select
+              ><br /><br />
+              </div>
+             <div class="input-block">
+               <label for="birthday">Date of Birth</label><br />
+              <input
+                type="date"
+                id="birthday"
+                name="birthday"
+                class="DateOfBirth"
+                required
+              /><br /><br />
+             </div>
+            </div>
+            <div class= "third-field group">
+             <div class="input-block"> <label for="weight">Weight (KG)</label><br />
+              <input
+                type="number"
+                id="weight"
+                name="weight"
+                placeholder="Enter weight"
+                required
+              /><br /><br />
+            </div>
+          <div class="input-block">
+            <label for="height">Height (CM)</label><br />
+              <input
+                type="number"
+                id="height"
+                name="height"
+                placeholder="Enter height"
+                required
+              /><br /><br />
+            </div>
+          </div>
+          </div>
+          <div class="long-field">
+            <label for="activity">Activity Level </label><br/>
+            <select name="activity" id="activity" required>
+              <option value=" " disabled selected hidden >Select here</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Professional">
+                Professional
+              </option></select
+            ><br /><br />
+            <label for="password">Password:</label><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br /><br />
+            </div>
+            <button>Register</button>
+            <div class="terms">
+              <p id="terms">
+              By clicking Register, you agree to our
+              <a href="#">Terms of Use</a> and our <a href="">Privacy</a>
+              Policy
+              </p>
+            </div>
+          </form>
+        </div>
+        <footer>
+          <p id="terms">
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+          </p>
+        </footer>
+      </div>
+      
+    </div>
+  </body>
+</html>

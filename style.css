@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+:root {
+  --white: #fff;
+  --Bluish-White: #f7fdfc;
+  --grey: #737373;
+  --deep-black: #000b0a;
+  --turquoise-green: #2ec4b6;
+  --black: #000;
+}
+/* USing an imported font family */
+@font-face {
+  font-family: "sofia-pro";
+  src: url("sofiapro-light.otf") format("opentype");
+}
+@font-face {
+  font-family: Brown-Regular;
+  src: url(BrownLight\ Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Brown-Bold;
+  src: url(Brown\ Bold.ttf) format("truetype");
+}
+/* USing an imported font family */
+
+/*................MOBILE SCREEN SIZE............*/
+body {
+  background-color: var(--Bluish-White);
+}
+.sign-up {
+  background-color: var(--Bluish-White);
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding-inline: 5%;
+}
+.individual {
+  width: 100%;
+  margin-block-start: 10%;
+  margin-block-end: 5.5%;
+  font-family: Brown-Regular;
+}
+.Desktop-text,
+.Desktop-logo {
+  display: none;
+}
+.Mobile-logo {
+  margin-inline-start: -2%;
+}
+h1 {
+  width: 100%;
+  height: 2.3%;
+  color: var(--deep-black);
+  font-family: Brown-Bold;
+  font-size: 1.8rem;
+  padding-block-start: 3.09%;
+  padding-block-end: 2.8%;
+}
+p {
+  width: 100%;
+  height: 2.3%;
+  color: var(--grey);
+  font-size: 1rem;
+  font-family: sofia-pro;
+  line-height: 140%;
+  /*padding-block-end: 3.1%;*/
+}
+
+/*......................FORM................*/
+.form {
+  font-family: sofia-pro;
+  width: 100%;
+}
+form {
+  background-color: var(--white);
+  padding-inline-start: 4.3%;
+  padding-inline-end: 4.3%;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+form label {
+  display: block;
+  line-height: 0.08%;
+  font-family: Brown-Regular;
+  font-size: 15px;
+  padding-block-end: 1%;
+  font-weight: 600;
+}
+.short-field {
+  padding-block-start: 3.3%;
+}
+form input {
+  width: 100%;
+  padding-block: 14px;
+  display: block;
+  line-height: 1.25rem;
+  border: 3px solid var(--Bluish-White);
+  border-radius: 2px;
+  outline: none;
+}
+option[value=""] {
+  font-size: 1px;
+  vertical-align: middle;
+}
+option {
+  font-weight: normal;
+  display: block;
+  white-space-collapse: collapse;
+  text-wrap: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: var(--grey);
+  vertical-align: center;
+  font-size: 14px;
+}
+input[type="number"]::-webkit-input-placeholder {
+  color: var(--grey);
+  vertical-align: center;
+  font-size: 14px;
+}
+
+form input:focus,
+form select:focus {
+  border: 3px solid var(--turquoise-green);
+}
+select {
+  width: 100%;
+  height: 3.5rem;
+  display: block;
+  padding-block: 14px;
+  font-size: 14px;
+  line-height: 1.25rem;
+  border: 3px solid var(--Bluish-White);
+  border-radius: 2px;
+  outline: none;
+  appearance: none;
+  color: var(--grey);
+  background: url(u_angle-down.svg) no-repeat;
+  background-position: right 12px center;
+}
+input[name="password"] {
+  background: url(show.svg) no-repeat;
+  background-position: right 12px center;
+}
+input[name="birthday"] {
+  background: url(Vector.svg) no-repeat;
+  background-position: right 12px center;
+}
+
+/* The style below hides the default calendar Icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+}
+/* The style above hides the default calendar Icon */
+
+/* to show after click */
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+
+button {
+  width: 100%;
+  padding-block: 14px;
+  margin-block-end: 5%;
+  height: 5.5%;
+  border: 3px solid var(--Bluish-White);
+  border-radius: 6px;
+  outline: none;
+  background-color: var(--turquoise-green);
+  color: var(--Bluish-White);
+  font-weight: 600;
+}
+.terms {
+  display: none;
+}
+#terms {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5625rem;
+  font-size: 0.875rem;
+  color: var(--deep-black);
+  > a {
+    color: var(--turquoise-green);
+    font-size: 13px;
+  }
+}
+/*.................FORM...................*/
+
+/*....................MOBILE SCREEN SIZE..............*/
+
+/*...................DESKTOP SCREEN SIZE...............*/
+@media screen and (min-width: 1024px) {
+  .sign-up {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 120px;
+    justify-content: center;
+    padding-block-start: 80px;
+  }
+  .individual {
+    padding-block-start: 120px;
+    padding-block-end: 40px;
+    max-width: 460px;
+    margin-block: 0;
+    margin-inline-end: 60px;
+  }
+  .Desktop-text {
+    display: contents;
+    font-size: 1rem;
+    line-height: 25px;
+    font-family: Brown-Regular;
+    padding-inline-end: 120px;
+  }
+
+  .Desktop-logo {
+    display: block;
+    margin-inline-start: -10.1px;
+  }
+  p.Mobile-text,
+  .Mobile-logo {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding-block-start: 15px;
+    padding-block-end: 79px;
+    line-height: 35px;
+    font-weight: 200;
+  }
+  .short-field {
+    padding-block-start: 0;
+  }
+  .form {
+    background-color: var(--white);
+    max-width: 100%;
+    height: 50%;
+  }
+  form {
+    padding-inline: 0;
+  }
+  .terms {
+    display: contents;
+  }
+  footer {
+    display: none;
+  }
+
+  .group {
+    display: flex;
+    gap: 24px;
+  }
+  .input-block {
+    width: 100%;
+    padding-block-end: 30px;
+  }
+
+  .form {
+    max-width: 100%;
+    padding: 40px;
+    margin-block-end: 80px;
+  }
+
+  form label {
+    display: block;
+    line-height: 0.08%;
+    font-size: 15px;
+    padding-block-end: 1%;
+    font-weight: 600;
+  }
+
+  button {
+    margin-block-end: 16px;
+  }
+
+  .terms {
+    width: 100%;
+    padding-inline-start: 6px;
+    padding-inline-end: 6px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5625rem;
+    padding-block-end: 40px;
+    font-size: 0.875rem;
+    color: var(--deep-black);
+    > a {
+      color: var(--turquoise-green);
+      font-size: 13px;
+    }
+  }
+}
+/*.............DESKTOP SCREEN SIZE................*/
